@@ -1,0 +1,11 @@
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\bin\Debug\netcoreapp2.2\InvestorHelper.deps.json
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\bin\Debug\netcoreapp2.2\InvestorHelper.runtimeconfig.json
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\bin\Debug\netcoreapp2.2\InvestorHelper.runtimeconfig.dev.json
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\bin\Debug\netcoreapp2.2\InvestorHelper.dll
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\bin\Debug\netcoreapp2.2\InvestorHelper.pdb
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.csprojAssemblyReference.cache
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.csproj.CoreCompileInputs.cache
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.AssemblyInfoInputs.cache
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.AssemblyInfo.cs
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.dll
+C:\Users\BBest\source\repos\InvestorHelper\InvestorHelper\obj\Debug\netcoreapp2.2\InvestorHelper.pdb
