@@ -18,6 +18,8 @@ namespace InvestorHelper.Models
                 Stock highestStockHolding = Stocks[0];
                 Stock lowestStockHolding = Stocks[0];
 
+                int j = 0;
+
                 for (int i = 0; i < Stocks.Count - 1; i++)
                 {
                     if (Stocks[i + 1].StockHoldings > Stocks[i].StockHoldings)
@@ -27,17 +29,18 @@ namespace InvestorHelper.Models
                     if (Stocks[i + 1].StockHoldings < Stocks[i].StockHoldings)
                     {
                         lowestStockHolding = Stocks[i + 1];
+                        j = i + 1;
                     }
                 }
 
                 decimal difference = highestStockHolding.StockHoldings - lowestStockHolding.StockHoldings;
 
-                int sharesToBuy = (int)difference / (int)lowestStockHolding.StockHoldings;
+                int sharesToBuy = (int)difference / (int)lowestStockHolding.StockPrice;
 
-                if (sharesToBuy * lowestStockHolding.StockPrice < fundsAvailable)
+                if (sharesToBuy * lowestStockHolding.StockPrice <= fundsAvailable)
                 {
                     fundsAvailable -= sharesToBuy * lowestStockHolding.StockPrice;
-                    lowestStockHolding.StockHoldings += sharesToBuy * lowestStockHolding.StockPrice;
+                    Stocks[j].StockHoldings += sharesToBuy * lowestStockHolding.StockPrice;
 
                     Instructions.Add($"Buy {sharesToBuy} shares of {lowestStockHolding.StockSymbol}.");
                 }

@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BBest\\source\\repos\\InvestorHelper\\InvestorHelper\\InvestorHelper.csproj",
+      "projectUniqueName": "C:\\Users\\BBest\\git\\brandon-best-side-projects\\InvestorHelper.csproj",
       "projectName": "InvestorHelper",
-      "projectPath": "C:\\Users\\BBest\\source\\repos\\InvestorHelper\\InvestorHelper\\InvestorHelper.csproj",
+      "projectPath": "C:\\Users\\BBest\\git\\brandon-best-side-projects\\InvestorHelper.csproj",
       "packagesPath": "C:\\Users\\BBest\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BBest\\source\\repos\\InvestorHelper\\InvestorHelper\\obj\\",
+      "outputPath": "C:\\Users\\BBest\\git\\brandon-best-side-projects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
