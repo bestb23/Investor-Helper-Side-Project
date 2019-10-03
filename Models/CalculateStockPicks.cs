@@ -37,7 +37,7 @@ namespace InvestorHelper.Models
 
                 int sharesToBuy = (int)difference / (int)lowestStockHolding.StockPrice;
 
-                if (sharesToBuy * lowestStockHolding.StockPrice <= fundsAvailable)
+                if (sharesToBuy * lowestStockHolding.StockPrice <= fundsAvailable && sharesToBuy != 0)
                 {
                     fundsAvailable -= sharesToBuy * lowestStockHolding.StockPrice;
                     Stocks[j].StockHoldings += sharesToBuy * lowestStockHolding.StockPrice;
