@@ -11,7 +11,16 @@ namespace InvestorHelper.Models
         public List<string> Run(List<Stock> Stocks)
         {
             Console.WriteLine("Enter the amount of funds available to invest");
-            decimal fundsAvailable = decimal.Parse(Console.ReadLine());
+            string fundsAvailableInput = Console.ReadLine();
+            //decimal fundsAvailable = decimal.Parse(Console.ReadLine());
+            decimal fundsAvailable;
+            bool fundsAvailableSuccess = decimal.TryParse(fundsAvailableInput, out fundsAvailable);
+
+            if (!fundsAvailableSuccess)
+            {
+                Console.WriteLine("Incorrect input(not a number) please try again. ");
+                this.Run(Stocks);
+            }
 
             while (true)
             {
