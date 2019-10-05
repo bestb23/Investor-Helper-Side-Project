@@ -16,11 +16,20 @@ namespace InvestorHelper
             CalculateStockPicks calculate = new CalculateStockPicks();
             List<string> instructionList = calculate.Run(collect.Run());
 
-            foreach (string instruction in instructionList)
+            if (instructionList.Count == 0)
             {
-                Console.WriteLine(instruction);
+                Console.WriteLine("Could not determine best investment action " +
+                    "to take. Maybe wait for more investment funds to be available.");
+            }
+            else
+            {
+                foreach (string instruction in instructionList)
+                {
+                    Console.WriteLine(instruction);
+                }
             }
 
+            Console.WriteLine("All done!");
             Console.ReadKey();
         }
     }
